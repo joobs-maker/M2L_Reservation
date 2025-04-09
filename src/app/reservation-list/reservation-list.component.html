@@ -1,0 +1,22 @@
+<<table>
+  <thead>
+    <tr>
+      <th>Salle</th>
+      <th>Date</th>
+      <th>Heure de début</th>
+      <th>Heure de fin</th>
+      <th>Utilisateur</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+      <td>{{ reservation.salle?.nom }}</td>
+      <td>{{ reservation.date }}</td>
+      <td>{{ reservation.heureDebut }}</td>
+      <td>{{ reservation.heureFin }}</td>
+      <td>{{ reservation.utilisateur?.nom }}</td>
+      <td><button (click)="deleteReservation(reservation.id)">Supprimer</button></td>
+    </tr>
+  </tbody>
+</table>
